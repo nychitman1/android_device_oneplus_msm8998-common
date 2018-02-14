@@ -47,3 +47,7 @@
 # Remove /system/lib[64]/vndk-sp/android.hardware.graphics.allocator@2.0.so
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/vndk-sp/android.hardware.graphics.allocator@2.0.so)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib64/vndk-sp/android.hardware.graphics.allocator@2.0.so)
+
+# Remove /system/lib[64]/vndk-sp/libz.so
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/vndk-sp/libz.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib64/vndk-sp/libz.so)
