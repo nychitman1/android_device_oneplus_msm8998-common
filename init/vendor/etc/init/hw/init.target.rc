@@ -77,6 +77,10 @@ on fs
     start hwservicemanager
 
 on late-fs
+    # Start services for bootanim
+    start servicemanager
+    start surfaceflinger
+    start bootanim
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
