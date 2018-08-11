@@ -124,7 +124,8 @@ PRODUCT_PACKAGES += \
     libloc_core \
     libloc_pla \
     libloc_stub \
-    libvehiclenetwork-native
+    libvehiclenetwork-native \
+    libgnss_shim
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \

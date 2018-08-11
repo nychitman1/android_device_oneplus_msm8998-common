@@ -249,6 +249,11 @@ PROTOBUF_SUPPORTED := true
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
+# Shim
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib64/vendor.qti.gnss@1.0_vendor.so|libgnss_shim.so \
+    /system/lib64/vendor.qti.gnss@1.0.so|libgnss_shim.so
+
 # Time Service
 BOARD_USES_QC_TIME_SERVICES := true
 
