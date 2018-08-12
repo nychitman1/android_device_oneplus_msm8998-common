@@ -262,9 +262,9 @@ PRODUCT_BOOT_JARS += \
     tcmiface
 
 # Tether offload
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
+#PRODUCT_PACKAGES += \
+#    ipacm \
+#    IPACM_cfg.xml
 
 # Text classifier smart selection model files
 PRODUCT_PACKAGES += \
