@@ -59,6 +59,7 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=2048
 BOARD_KERNEL_CMDLINE += androidboot.configfs=true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.wificountrycode=US
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -244,8 +245,8 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab
 PROTOBUF_SUPPORTED := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
