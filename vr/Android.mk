@@ -16,7 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../thermal-engine
+LOCAL_C_INCLUDES := hardware/qcom/msm8998/thermal-engine
 LOCAL_MODULE := vr.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_PROPRIETARY_MODULE := true
