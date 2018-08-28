@@ -232,7 +232,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-<!--
+<!-- remove for now
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
@@ -242,8 +242,6 @@
             <instance>default</instance>
         </interface>
     </hal>
--->
-<!-- remove for now
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
