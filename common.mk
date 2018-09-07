@@ -260,13 +260,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     sensors.msm8998
 
-# TCM
-PRODUCT_PACKAGES += \
-    tcmiface
-
-PRODUCT_BOOT_JARS += \
-    tcmiface
-
 # Tether offload
 #PRODUCT_PACKAGES += \
 #    ipacm \
