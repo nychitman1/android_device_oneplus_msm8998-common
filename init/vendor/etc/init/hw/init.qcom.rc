@@ -494,6 +494,9 @@ on property:vold.decrypt=trigger_restart_framework
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
+on property:sys.usb.ffs.mtp.ready=0
+    setprop sys.usb.ffs.mtp.ready 1
+
 service cnd /vendor/bin/cnd
     class main
     user system
